@@ -1,13 +1,12 @@
-import {ModalModule} from './modal/modal.module';
-import {SpinnerModule} from './spinner/spinner.module';
-import {ToastModule} from './toast/toast.module';
-import {RouterModule} from "@angular/router";
-import {FormsModule} from "@angular/forms";
-import {CommonModule} from "@angular/common";
-import {NgModule, Optional, SkipSelf} from "@angular/core";
-import {ExceptionService} from "./exception.service";
-import {EntityService} from "./entity.service";
-import {MessageService} from "./message.service";
+import {RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
+import {NgModule, Optional, SkipSelf} from '@angular/core';
+import {ExceptionService} from './exception.service';
+import {EntityService} from './entity.service';
+import {MessageService} from './message.service';
+import {NavComponent} from '../src/app/core/nav/nav.component';
+import {ToastModule} from '../src/app/core/toast/toast.module';
 
 @NgModule({
   imports: [
