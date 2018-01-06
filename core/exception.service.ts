@@ -3,6 +3,7 @@ import {Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 
 import {ToastService} from '../src/app/core/toast/toast.service';
+import 'rxjs/add/observable/of';
 
 @Injectable()
 export class ExceptionService {
