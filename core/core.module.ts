@@ -7,6 +7,7 @@ import {EntityService} from './entity.service';
 import {MessageService} from './message.service';
 import {NavComponent} from '../src/app/core/nav/nav.component';
 import {ToastModule} from '../src/app/core/toast/toast.module';
+import {ModalModule} from "../src/app/core/modal/modal.module";
 
 @NgModule({
   imports: [
