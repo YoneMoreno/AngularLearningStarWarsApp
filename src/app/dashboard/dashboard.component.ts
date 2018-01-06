@@ -2,7 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {Character} from '../../../models/character.model';
 import {Subscription} from 'rxjs/Subscription';
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, Router} from '@angular/router';
+import {CharacterService} from '../../../models/character.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,9 +16,8 @@ export class DashboardComponent implements OnInit {
   characters: Observable<Character[]>;
   title: string;
 
-  constructor(
-    private route: ActivatedRoute,
-    private characterService: ChararcterService,) {
+  constructor(private route: ActivatedRoute,
+              private characterService: CharacterService) {
   }
 
   ngOnInit() {

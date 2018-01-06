@@ -70,13 +70,13 @@ export class CharacterService {
 
     return <Observable<Character>>this.http
       .put(`${charactersUrl}/${character.id}`, body)
-      .map(res => this.extractData << Character > (res))
+      .map(res => this.extractData < Character > (res))
       .catch(this.exceptionService.catchBadResponse)
       .finally(() => this.spinnerService.hide());
   }
 
-  private extractData<T>(res: Response){
-    if (res.status < 200 || res.status >= 300){
+  private extractData<T>(res: Response) {
+    if (res.status < 200 || res.status >= 300) {
       throw new Error('Bad response status: ' + res.status);
     }
     const body = res.json ? res.json() : null;
